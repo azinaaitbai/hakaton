@@ -1,0 +1,28 @@
+#feedback-button {
+  background-color: rgb(120, 0, 110);
+  text-transform: uppercase;
+  border-radius: 10px 10px 0 0;
+  color: white;
+  position: fixed;
+  right: -85px;
+  top: 50%;
+  transform: translateY(-50%) rotate(-90deg);
+  z-index: 2147483647;
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.15);
+  font-weight: 600;
+  font-size: 14px;
+  padding: 12px 20px;
+  letter-spacing: 0.6px;
+  font-family: "Open sans", sans-serif;
+}
+[dir="rtl"] #feedback-button {
+  right: -35px;
+  font-size: 17px;
+}
+@media (max-width: 767px) {
+  #feedback-button {
+    top: unset;
+    transform: rotate(-90deg);
+    bottom: 116px;
+  }
+}
